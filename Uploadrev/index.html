@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="uploadrev.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
+</head>
+<body>
+
+  
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://cdn-icons-png.flaticon.com/512/3232/3232821.png" class="h-8" alt="Foodbite Logo" />
+        
+            <span id="Logo_name" class="self-center text-2xl font-semibold whitespace-nowrap dark:text-">Foodbite</span>
+        </a>
+        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+ <a href="/profile/index.html">           
+<img id="userImg" style="display: none;" class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Bordered avatar"></a>
+            <a id="loginLink" href="/auth/login/index.html" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+            <button id="logout_btn">logout</button>
+        </div>
+    </div>
+</nav>
+<nav class="bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                <li>
+                    <a href="index.html" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <a href="Upload.html" class="text-gray-900 dark:text-white hover:underline">My Uploads</a>
+                </li>
+                <li>
+                    <a href="Like.html" class="text-gray-900 dark:text-white hover:underline"> My Likes</a>
+                </li>
+                <li>
+                    <a href="About.html" class="text-gray-900 dark:text-white hover:underline">About Us</a>
+                </li>
+
+                <li>
+                    <a href="Uploadrev.html" class="text-gray-900 dark:text-white hover:underline">Upload Review</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+
+<div class="centerform">
+    <div class="card">
+               <!-- <h1 class="Upp">Upload Food review</h1> -->
+
+        <p class="heading" Upload Food reviews >
+            
+         <div class="upload-container">
+              <h1>Upload Food Picture</h1>
+              <form  id="upload-form">
+                  <input type="file" id="food-picture" accept="image/*">
+                  <input type="text" id="fName" placeholder="Food Name Or Restraunt Name">
+                  <input type="text" id="location" placeholder="Add Location By google maps">
+                  <button id="upload-btn">Upload</button>
+              </form>
+
+
+      </p></div>
+    </div>
+
+
+
+
+
+  
+
+
+
+  
+  <script src="uploadrev.js" type="module"> </script>
+</body>
+</html>

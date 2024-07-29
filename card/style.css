@@ -1,0 +1,233 @@
+/* .body{
+  box-sizing: border-box;
+
+} */
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 20px;
+    }
+
+
+.main{
+ 
+    display: flex;
+}
+
+
+
+.card {
+  --background: linear-gradient(to left, #f7ba2b 0%, #ea5358 100%);
+  width: 190px;
+  height: 355px;
+  padding: 5px;
+  border-radius: 1rem;
+  overflow: visible;
+  background: #f7ba2b;
+  background: var(--background);
+  position: relative;
+  z-index: 1;
+
+}
+
+.card::after {
+  position: absolute;
+  content: "";
+  top: 30px;
+  left: 0;
+  right: 0;
+  z-index: -1;
+  height: 100%;
+  width: 100%;
+  transform: scale(0.8);
+  filter: blur(25px);
+  background: #f7ba2b;
+  background: var(--background);
+  transition: opacity .5s;
+}
+
+.card-info {
+  --color: #ededed;
+  background: var(--color);
+  color: var(--color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  /* overflow: visible; */
+  border-radius: .7rem;
+  border-color: black;
+}
+
+.card .title {
+  font-weight: bold;
+  letter-spacing: .1em;
+}
+
+/*Hover*/
+.card:hover::after {
+  opacity: 0;
+}
+
+.card:hover .card-info {
+  color: #f7ba2b;
+  transition: color 1s;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  justify-content: center; /* Centers cards horizontally */
+}
+
+.card-pic{
+  width: 175px;
+  height: 150px;
+  position: absolute;
+  left: 12px;
+  top: 13px;
+  border-radius: 10px;
+}
+
+.food-name{
+  color: #000;
+  font-size: 19px;
+  font-weight: 600;
+  /* position: fixed; */
+}
+
+.map{
+  position: fixed !important;
+  height: auto !important;
+  width: 175px !important;
+  top: 310px !important;
+}
+
+#map-width{
+  overflow: hidden !important;
+}
+
+.like-wrapper {
+  --gap: 0.5em;
+  --radius: 0.35em;
+  /* display: flex;
+  align-items: center;
+  text-align: center; */
+  /* justify-content: center; */
+  --dot-bg: #212121;
+  --dot-color: #313131;
+  --dot-size: 1px;
+  --dot-space: 22px;
+  background: linear-gradient(
+        90deg,
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      
+      center / var(--dot-space) var(--dot-space),
+    linear-gradient(
+        var(--dot-bg) calc(var(--dot-space) - var(--dot-size)),
+        transparent 1%
+      )
+      center / var(--dot-space) var(--dot-space),
+    var(--dot-color);
+  border: 0.1em solid #313131;
+  padding: 0.5em;
+  border-radius: var(--radius);
+  box-shadow: 0 0 1em 0.5em rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.check[type="checkbox"] {
+  display: none;
+}
+
+.likecontainer1 {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  margin-top: -0.25em;
+  margin-bottom: -0.25em;
+}
+
+.icon {
+  width: 1.5em;
+  height: 1.5em;
+  margin-left: 0.5em;
+  fill: white;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.icon.active {
+  display: none;
+  fill: #f52121;
+}
+
+.check[type="checkbox"]:checked + .likecontainer1 .icon.active {
+  display: inline-block;
+  animation: wiggle 0.5s ease-in-out;
+}
+
+.check[type="checkbox"]:checked + .likecontainer1 .icon.inactive {
+  display: none;
+}
+
+.like-text {
+  margin-left: 0.5em;
+  padding: 0.5em;
+  color: white;
+  font-family: Arial, sans-serif;
+  font-weight: bolder;
+}
+
+@keyframes wiggle {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-10deg);
+  }
+}
+
+.card {
+  position: relative;
+}
+.like-wrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: scale(0.8); /* reduce the size of the like button */
+  z-index: 1;
+}
+
+.like-wrapper .icon {
+  width: 20px; /* adjust the width of the icon */
+  height: 20px; /* adjust the height of the icon */
+}
+
+.like-wrapper .like-text {
+  font-size: 12px; /* adjust the font size of the like text */
+}  
+
+.card{
+  margin-right: 30px;
+  overflow: hidden;
+  margin-top: 10px;
+
+}
+
+
+
+
+
