@@ -1,11 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.css" rel="stylesheet" />
 </head>
 <body>
-    <h1>Profile</h1>
+
+  
+  <nav class="bg-white border-gray-200 dark:bg-gray-900">
+    <div class="flex flex-wrap justify-between items-center mx-auto max-w-screen-xl p-4">
+        <a href="index.html" class="flex items-center space-x-3 rtl:space-x-reverse">
+            <img src="https://cdn-icons-png.flaticon.com/512/3232/3232821.png" class="h-8" alt="Foodbite Logo" />
+        
+            <span id="Logo_name" class="self-center text-2xl font-semibold whitespace-nowrap dark:text-">Foodbite</span>
+        </a>
+        <div class="flex items-center space-x-6 rtl:space-x-reverse">
+ <a href="index.html">           
+<img id="userImg" style="display: none;" class="w-10 h-10 p-1 rounded-full ring-2 ring-gray-300 dark:ring-gray-500" src="https://www.shutterstock.com/image-vector/blank-avatar-photo-place-holder-600nw-1095249842.jpg" alt="Bordered avatar"></a>
+            <a id="loginLink" href="/auth/login/index.html" class="text-sm  text-blue-600 dark:text-blue-500 hover:underline">Login</a>
+            <button id="logout_btn">logout</button>
+        </div>
+    </div>
+</nav>
+<nav class="bg-gray-50 dark:bg-gray-700">
+    <div class="max-w-screen-xl px-4 py-3 mx-auto">
+        <div class="flex items-center">
+            <ul class="flex flex-row font-medium mt-0 space-x-8 rtl:space-x-reverse text-sm">
+                <li>
+                    <a href="../index.html" class="text-gray-900 dark:text-white hover:underline" aria-current="page">Home</a>
+                </li>
+                <li>
+                    <span >
+                    <a id="myupload-btn" href="/MyUploads/index.html" class="text-gray-900 dark:text-white hover:underline">My Uploads</a>
+                </span>
+                </li>
+                <li>
+                    <a href="/Mylikes/index.html" class="text-gray-900 dark:text-white hover:underline"> My Likes</a>
+                </li>
+                <li>
+                    <a href="/AboutUs/index.html" class="text-gray-900 dark:text-white hover:underline">About Us</a>
+                </li>
+
+                <li>
+                    <a href="/Uploadrev/index.html" class="text-gray-900 dark:text-white hover:underline">Upload Review</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+
+<div id="uploadProfileContainer"  class="container">
+
+
+
+</div>
+
+<div class="containerP">
+    <div class="card-client">
+        <div id="piImg">
+            <svg viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg">
+                <path d="M224 256c70.7 0 128-57.31 128-128s-57.3-128-128-128C153.3 0 96 57.31 96 128S153.3 256 224 256zM274.7 304H173.3C77.61 304 0 381.6 0 477.3c0 19.14 15.52 34.67 34.66 34.67h378.7C432.5 512 448 496.5 448 477.3C448 381.6 370.4 304 274.7 304z"></path>
+            </svg>
+    
+        </div>
+        <p id="flName" class="name-client"> User
+            <span > <p id="pimail">UserEmail</p>
+            </span>
+        </p>
+        
+    </div>
+</div>
+</div>
+
+
+
+  <script src="app.js" type="module"> </script>
 </body>
 </html>

@@ -8,8 +8,10 @@
 
 
 
-  import { getFirestore , doc, setDoc,getDoc,getDocs,collection, addDoc, updateDoc, arrayUnion, arrayRemove} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
-  import { getStorage , ref , uploadBytes , getDownloadURL} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
+  import { getFirestore , doc, setDoc,getDoc,getDocs,collection, addDoc, updateDoc, arrayUnion, arrayRemove,query, where,
+    deleteDoc,
+  } from "https://www.gstatic.com/firebasejs/10.12.4/firebase-firestore.js";
+  import { getStorage , ref , uploadBytes , getDownloadURL,} from "https://www.gstatic.com/firebasejs/10.12.4/firebase-storage.js";
 
 
   const firebaseConfig = {
@@ -46,5 +48,7 @@
     collection,
     addDoc,
     updateDoc, arrayUnion, arrayRemove,
+    getFirestore,query, where,
+    deleteDoc,
 
   };
