@@ -14,6 +14,9 @@ const uploadCardsContainer  = document.getElementById('uploadCardsContainer')
 
 
 const myUploadBtn = document.getElementById('my-upload-btn');
+const myUploadPage = document.getElementById('myUploadpage');
+const myLikespage = document.getElementById('myLikespage');
+const Uploadrevpage = document.getElementById('Uploadrevpage');
 
 
 
@@ -28,6 +31,10 @@ const myUploadBtn = document.getElementById('my-upload-btn');
     userImg.style.display = 'inline-block';
     getUserInfo(uid);
     logoutBtn.style.display = 'block';
+    myUploadPage.style.display = 'block';
+    myLikespage.style.display = 'block';
+    Uploadrevpage.style.display = 'block';
+
     // console.log('User Id',uid);
     // ...
   } else {
@@ -35,6 +42,9 @@ const myUploadBtn = document.getElementById('my-upload-btn');
     loginLink.style.display = 'inline-block'
     userImg.style.display = 'none';
     logoutBtn.style.display = 'none';
+    myUploadPage.style.display = 'none';
+    myLikespage.style.display = 'none';
+    Uploadrevpage.style.display = 'none';
     // myupload-btn.addEventListener('click',()=> {
     //    window.location.href = "/auth/login/index.html";
     // })
